@@ -1,0 +1,2 @@
+# WTMP-Assignment1
+Pizza Store Application - In this assignment students will practice their responsive design skills building a web version of a On-line Store Application. It is an introductory assignment focused on HTML and CSS. Ideas and concepts learned in this assignment will be used and extended later in the group project. You do not have to implement functionality such as cart or payment. Those elements should be replaced by clickable mockups showing the design.
