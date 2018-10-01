@@ -1,10 +1,83 @@
+<!--Name: Jose Aleixo Araujo Porpino Filho-->
+<!--Student number: 301005491-->
+<!--File description: The order confirmation with the details and status-->
+<!--File version: 1.0.0-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Italian Pizza</title>
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/fonts/font-css.css">
+    <link rel="shortcut icon" href="resources/img/pizza_logo_icon.ico"/>
 </head>
 <body>
+<header>
+    <nav >
+        <ul itemtype="http://schema.org/menu">
+            <li>
+                <img itemprop="image" src="resources/img/pizza_logo.png" alt="Italian Pizza logo" class="logo-menu"/>
+            </li>
+            <li><a href="product-list.html">Pizza list</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li style="float:right"><a href="about.html">About</a></li>
+        </ul>
 
+    </nav>
+</header>
+<div class="container">
+    <div style="text-align: center">
+        <img itemprop="image" src="resources/img/pizza_logo.png" alt="Italian Pizza logo" class="pizza-logo" />
+        <br/>
+        <label class="pizza-title">Italian Pizza</label>
+        <br/>
+        <label class="pizza-slogan">You have never tried like this</label>
+    </div>
+    <h2>Order Confirmation</h2>
+    <div class="col span_12_of_12" itemtype="http://schema.org/PaymentComplete">
+        <h3>
+            Your order is confirmed! Now is just wait and eat a delicious pizza that you will never forget
+        </h3>
+    </div>
+    <div class="col span_4_of_12" itemtype="http://schema.org/confirmationNumber">
+        <h4>
+            Confirmation number: 3002018123165
+        </h4>
+    </div>
+    <div class="col span_4_of_12" itemtype="http://schema.org/orderStatus">
+        <h4>
+            Transaction status: Order confirmed
+        </h4>
+    </div>
+    <div style="width: 100%">
+        <div itemtype="http://schema.org/Order">
+            <table id="order">
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                </tr>
+                <tr>
+                    <td itemprop="product">Pizza X-large(3 toppings)</td>
+                    <td itemprop="description">Swiss cheese, tomatoes and bacon</td>
+                    <td>1</td>
+                    <td itemprop="price">$14.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br/>
+    <div style="width: 100%">
+        <button style="float: left" class="button-gray" onclick="window.location='toppings.html'">
+            Back
+        </button>
+        <button style="float: right;" class="button-blue" onclick="window.location='./product-list.html'">
+            Back to pizza list
+        </button>
+    </div>
+</div>
 </body>
 </html>

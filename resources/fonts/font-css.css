@@ -1,0 +1,14 @@
+/*
+** Name: Jose Aleixo Araujo Porpino Filho-->
+** Student number: 301005491-->
+** File description: The external fonts css-->
+** File version: 1.0.0-->
+*/
+
+@font-face {
+    font-family: 'PizzaFont';
+    src: url('southernaire_personal_use_only-webfont.woff2') format('woff2'),
+         url('southernaire_personal_use_only-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

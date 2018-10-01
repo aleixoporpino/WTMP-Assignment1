@@ -1,0 +1,98 @@
+<!--Name: Jose Aleixo Araujo Porpino Filho-->
+<!--Student number: 301005491-->
+<!--File description: Show the toppings of the pizza selected-->
+<!--File version: 1.0.0-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Italian Pizza</title>
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/fonts/font-css.css">
+    <link rel="shortcut icon" href="resources/img/pizza_logo_icon.ico"/>
+    <link href="resources/fonts/SouthernAire_Personal_Use_Only.ttf"/>
+</head>
+<body>
+<header>
+    <nav>
+        <ul itemtype="http://schema.org/menu">
+            <li>
+                <img itemprop="image" src="resources/img/pizza_logo.png" alt="Italian Pizza logo" class="logo-menu"/>
+            </li>
+            <li><a href="product-list.html">Pizza list</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li style="float:right"><a href="about.html">About</a></li>
+        </ul>
+
+    </nav>
+</header>
+<section>
+
+</section>
+<div class="container">
+    <div style="text-align: center">
+        <img itemprop="image" src="resources/img/pizza_logo.png" alt="Italian Pizza logo" class="pizza-logo" />
+        <br/>
+        <label class="pizza-title">Italian Pizza</label>
+        <br/>
+        <label class="pizza-slogan">You have never tried like this</label>
+    </div>
+    <h2>Toppings</h2>
+    <div style="width: 100%">
+        <div class="col span_4_of_12">
+            <h3>1st Topping</h3>
+            <img itemprop="image" src="resources/img/cheese.png" class="img-topping"/>
+            <input type="radio" name="pizza-topping1" title="Swiss cheese" value="Swiss cheese"/>
+            <label>Swiss cheese</label>
+            <br/>
+            <input type="radio" name="pizza-topping1" title="Cheddar cheese" value="Cheddar cheese"/>
+            <label>Cheddar cheese</label>
+            <br/>
+            <input type="radio" name="pizza-topping1" title="Mozzarella cheese" value="Mozzarella cheese"/>
+            <label>Mozzarella cheese</label>
+        </div>
+        <div class="col span_4_of_12">
+            <h3>2nd Topping</h3>
+            <img itemprop="image" src="resources/img/vegetables.png" class="img-topping"/>
+            <input type="radio" name="pizza-topping2" title="Tomatoes" value="Tomatoes"/>
+            <label>Tomatoes</label>
+            <br/>
+            <input type="radio" name="pizza-topping2" title="Pickles" value="Pickles"/>
+            <label>Pickles</label>
+            <br/>
+            <input type="radio" name="pizza-topping2" title="Corn" value="Corn"/>
+            <label>Corn</label>
+        </div>
+        <div class="col span_4_of_12">
+            <h3>3rd Topping</h3>
+            <img itemprop="image" src="resources/img/meat.png" class="img-topping"/>
+            <input type="radio" name="pizza-topping3" title="Bacon" value="Bacon"/>
+            <label>Bacon</label>
+            <br/>
+            <input type="radio" name="pizza-topping3" title="Ground meat" value="Ground meat"/>
+            <label>Ground meat</label>
+            <br/>
+            <input type="radio" name="pizza-topping3" title="Chicken" value="Chicken"/>
+            <label>Chicken</label>
+            <br/>
+            <input type="radio" name="pizza-topping3" title="Ham" value="Ham"/>
+            <label>Ham</label>
+            <br/>
+            <input type="radio" name="pizza-topping3" title="Pepperoni" value="Pepperoni"/>
+            <label>Pepperoni</label>
+        </div>
+    </div>
+    <br/>
+    <div style="width: 100%">
+        <button style="float: left" class="button-gray" onclick="window.location='product-list.html'">
+            Back
+        </button>
+        <button style="float: right;" class="button-blue" onclick="window.location='order.html'">
+            Confirm Toppings
+        </button>
+    </div>
+</div>
+</body>
+</html>

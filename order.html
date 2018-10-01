@@ -1,10 +1,135 @@
+<!--Name: Jose Aleixo Araujo Porpino Filho-->
+<!--Student number: 301005491-->
+<!--File description: Show the order information and some client information to fill-->
+<!--File version: 1.0.0-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Italian Pizza</title>
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/fonts/font-css.css">
+    <link rel="shortcut icon" href="resources/img/pizza_logo_icon.ico"/>
 </head>
 <body>
+<header>
+    <nav>
+        <ul itemtype="http://schema.org/menu">
+            <li>
+                <img itemprop="image" src="resources/img/pizza_logo.png" alt="Italian Pizza logo" class="logo-menu"/>
+            </li>
+            <li><a href="product-list.html">Pizza list</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li style="float:right"><a href="about.html">About</a></li>
+        </ul>
 
+    </nav>
+</header>
+<div class="container">
+    <div style="text-align: center">
+        <img itemprop="image" src="resources/img/pizza_logo.png" alt="Italian Pizza logo" class="pizza-logo" />
+        <br/>
+        <label class="pizza-title">Italian Pizza</label>
+        <br/>
+        <label class="pizza-slogan">You have never tried like this</label>
+    </div>
+    <h2>Order Confirmation</h2>
+    <div class="col span_12_of_12">
+        <h3>
+            Address information
+        </h3>
+    </div>
+    <div style="width: 100%">
+        <div class="span_12_of_12">
+            <label itemprop="name" for="name">Name:</label>
+            <input itemprop="name" id="name" placeholder="Full name" class="input-form">
+        </div>
+    </div>
+
+    <div style="width: 100%">
+        <div class="col span_6_of_12">
+            <label itemprop="streetAddress" for="streetAddress">Street address:</label>
+            <input itemprop="streetAddress" id="streetAddress" placeholder="Street address" class="input-form">
+        </div>
+        <div class="col span_3_of_12">
+            <label itemprop="addressLocality" for="city">City:</label>
+            <input itemprop="addressLocality" id="city" placeholder="City" class="input-form">
+        </div>
+        <div class="col span_3_of_12">
+            <label itemprop="addressLocality" for="Province">Province:</label>
+            <input itemprop="addressLocality" id="province" placeholder="Province" class="input-form">
+        </div>
+    </div>
+    <div style="width: 100%">
+        <div class="col span_2_of_12">
+            <label itemprop="postalCode" for="portalCode">Postal code:</label>
+            <input itemprop="postalCode" id="portalCode" placeholder="Postal code" class="input-form">
+        </div>
+        <div class="col span_2_of_12">
+            <label itemprop="telephone" for="phoneNumber">Phone number:</label>
+            <input itemprop="telephone" id="phoneNumber" placeholder="Phone number" class="input-form">
+        </div>
+        <div class="col span_8_of_12">
+            <label itemprop="email" for="email">E-mail:</label>
+            <input itemprop="email" id="email" placeholder="E-mail" class="input-form">
+        </div>
+    </div>
+    <br/>
+    <div class="col span_12_of_12">
+        <h3>
+            Billing information
+        </h3>
+    </div>
+    <div style="width: 100%" itemscope itemtype="http://schema.org/CreditCard">
+        <div class="col span_5_of_12" itemprop="name">
+            <label for="nameOnCard">Name on card:</label>
+            <input id="nameOnCard" placeholder="Name on card" class="input-form">
+        </div>
+        <div class="col span_4_of_12">
+            <label for="cardNumber">Card number:</label>
+            <input id="cardNumber" placeholder="Card number" class="input-form">
+        </div>
+        <div class="col span_3_of_12">
+            <label for="expirationDate">Expiration:</label>
+            <div>
+                <input id="expirationDate" type="month" placeholder="year" class="input-form">
+            </div>
+        </div>
+    </div>
+    <div class="col span_12_of_12">
+        <h3>
+            Order Details
+        </h3>
+    </div>
+    <div style="width: 100%">
+        <div itemprop="referencesOrder" itemscope itemtype="http://schema.org/Order">
+            <table id="order">
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                </tr>
+                <tr>
+                    <td itemprop="product">Pizza X-large(3 toppings)</td>
+                    <td itemprop="description">Swiss cheese, tomatoes and bacon</td>
+                    <td>1</td>
+                    <td itemprop="price">$14.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br/>
+    <div style="width: 100%">
+        <button style="float: left" class="button-gray" onclick="window.location='toppings.html'">
+            Back
+        </button>
+        <button style="float: right;" class="button-green" onclick="window.location='./order-confirmation.html'">
+            Checkout
+        </button>
+    </div>
+</div>
 </body>
 </html>

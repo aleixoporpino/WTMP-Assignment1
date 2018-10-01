@@ -1,0 +1,82 @@
+<!--Name: Jose Aleixo Araujo Porpino Filho-->
+<!--Student number: 301005491-->
+<!--File description: Show the product list of all size and different pizzas-->
+<!--File version: 1.0.0-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Italian Pizza</title>
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/fonts/font-css.css">
+    <link rel="shortcut icon" href="resources/img/pizza_logo_icon.ico"/>
+    <link href="resources/fonts/SouthernAire_Personal_Use_Only.ttf"/>
+</head>
+<body>
+<header>
+    <nav>
+        <ul itemtype="http://schema.org/menu">
+            <li>
+                <img itemprop="image" src="resources/img/pizza_logo.png" alt="Italian Pizza logo" class="logo-menu"/>
+            </li>
+            <li><a href="product-list.html">Pizza list</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li style="float:right"><a href="about.html">About</a></li>
+        </ul>
+
+    </nav>
+</header>
+<section>
+
+</section>
+<div class="container">
+    <div style="text-align: center">
+        <img itemprop="image" src="resources/img/pizza_logo.png" alt="Italian Pizza logo" class="pizza-logo" />
+        <br/>
+        <label class="pizza-title">Italian Pizza</label>
+        <br/>
+        <label class="pizza-slogan">You have never tried like this</label>
+    </div>
+    <h2>Pizza list</h2>
+    <div style="width: 100%">
+        <div class="col span_4_of_12" itemscope itemtype="http://schema.org/Product">
+            <h3 itemprop="Medium Pizza">Option 1</h3>
+            <img itemprop="image" src="resources/img/pizza-medium.png" alt="Italian Pizza logo"
+                 class="pizza-option-1"/>
+            <br/>
+            <input type="radio" name="pizza-size" title="Medium" value="Medium"/>
+            <label itemprop="price" content="6.00" style="text-align: center">Medium $6.00</label>
+            </br>
+            <label>1-topping</label>
+            </br>
+        </div>
+        <div class="col span_4_of_12" itemscope itemtype="http://schema.org/Product">
+            <h3>Option 2</h3>
+            <img itemprop="image" src="resources/img/pizza-large.png" alt="Italian Pizza logo"
+                 class="pizza-option-2"/>
+            <br/>
+            <input type="radio" name="pizza-size" title="Large" value="Large"/>
+            <label itemprop="price" content="10.99" style="text-align: center">Large $10.99</label></br>
+            <label style="text-align: center">2-toppings</label></br>
+        </div>
+        <div class="col span_4_of_12" itemscope itemtype="http://schema.org/Product">
+            <h3>Option 3</h3>
+            <img itemprop="image" src="resources/img/pizza-xlarge.png" alt="Italian Pizza logo"
+                 class="pizza-option-3"/>
+            <br/>
+            <input type="radio" name="pizza-size" title="X-large" value="X-large"/>
+            <label itemprop="price" content="14.00" style="text-align: center">X-Large $14.00</label> </br>
+            <label style="text-align: center">3-toppings</label></br>
+        </div>
+    </div>
+    <br/>
+    <div style="width: 100%">
+        <button style="float: right;" class="button-blue" onclick="window.location='toppings.html'">
+            Confirm
+        </button>
+    </div>
+</div>
+</body>
+</html>
